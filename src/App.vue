@@ -14,6 +14,10 @@
           <img src="/src/assets/images/editor.svg" alt="简历编辑器" />
           <span v-if="!isSidebarHidden">简历编辑器</span>
         </router-link>
+        <router-link to="/setting">
+          <img src="/src/assets/images/setting.svg" alt="设置" />
+          <span v-if="!isSidebarHidden">设置</span>
+        </router-link>
       </nav>
     </div>
     <div :class="['content', { 'content-expanded': isSidebarHidden }]">
@@ -53,7 +57,7 @@ export default {
 }
 
 .sidebar {
-  background-color: #35495e;
+  background-color: #f9fbff;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -87,21 +91,28 @@ nav {
 nav a {
   display: flex;
   align-items: center;
-  color: white;
+  color: black;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 5px;
   border-radius: 4px;
   transition: background-color 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 nav a:hover {
-  background-color: #41b883;
+  background-color: #dddddd;
 }
 
 nav img {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+}
+
+.sidebar-hidden nav img {
+  margin-right: 0;
 }
 
 .content {

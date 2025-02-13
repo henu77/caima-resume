@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #000000;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 210mm;
+        max-width: 100%;
+        height: 297mm;
+        max-height: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 18px;
+        color: #000000;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        margin-top: 10px;
+      }
+
+      .section {
+        margin-top: 10px;
+      }
+
+      .section p,
+      .section ul {
+        margin-bottom: 5px;
+      }
+      .section-title {
+        font-weight: bold;
+      }
+
+      .section ul li {
+        margin-bottom: 5px;
+      }
+
+      .contact-info {
+        text-align: center;
+      }
+
+      .contact-info .name {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .contact-info .info {
+        font-size: 16px;
+      }
+
+      .education ul li,
+      .edu-section {
+        margin-bottom: 20px;
+      }
+
+      .edu-header {
+        display: grid;
+        grid-template-columns: 20% 15% 40% 25%; /* 调整列宽比例 */
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      .edu-school {
+        font-size: 15px;
+        font-weight: bold;
+        justify-self: start;
+      }
+
+      .edu-degree {
+        font-weight: bold;
+        justify-self: start;
+      }
+
+      .edu-major {
+        font-weight: bold;
+        justify-self: start;
+      }
+
+      .edu-time {
+        color: #666;
+        justify-self: end; /* 确保靠右对齐 */
+        text-align: right; /* 文本右对齐 */
+      }
+
+      .edu-details {
+        margin: 5px 0;
+      }
+
+      .project ul li {
+        list-style-type: none;
+      }
+      .pro-section {
+        margin-bottom: 20px;
+      }
+      .pro-header {
+        display: grid;
+        grid-template-columns: 40% 8% 27% 25%;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+      }
+      .pro-name {
+        font-size: 15px;
+        font-weight: bold;
+        justify-self: start;
+      }
+      .pro-role {
+        font-weight: bold;
+        justify-self: start;
+      }
+      .pro-technology {
+        font-weight: bold;
+        justify-self: start;
+      }
+      .pro-time {
+        color: #666;
+        justify-self: end;
+        text-align: right;
+      }
+      .pro-details {
+        margin: 5px 0;
+      }
+
+      .certificate ul li {
+        margin-bottom: 2px;
+        display: grid;
+        grid-template-columns: 80% 20%;
+      }
+      .cer-name {
+        font-weight: normal;
+      }
+
+      .cer-time {
+        color: #666;
+        justify-self: end;
+        text-align: right;
+      }
+      .cer-level {
+        color: #666;
+        justify-self: end;
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- 基本信息 -->
+      <div class="contact-info">
+        <p><span class="name">马龙</span></p>
+        <p>
+          <span class="info">23岁 | 18637877210 | example@example.com</span>
+        </p>
+      </div>
+
+      <!-- 教育背景 -->
+      <div class="education">
+        <h1>教育背景</h1>
+        <div class="edu-section">
+          <div class="edu-header">
+            <span class="edu-school">郑州大学</span>
+            <span class="edu-degree">硕士</span>
+            <span class="edu-major">人工智能</span>
+            <span class="edu-time">2023-2026</span>
+          </div>
+          <div class="edu-details">
+            <p>排名：4/53 绩点：4.09/4.3</p>
+            <p>
+              主要课程：高级人工智能(99)，数据挖掘(94)，工业视觉(96)，数理统计与随机过程(93)，神经网络与深度学习(89)，高级算法设计与分析(88)
+            </p>
+          </div>
+        </div>
+        <div class="edu-section">
+          <div class="edu-header">
+            <span class="edu-school">河南大学</span>
+            <span class="edu-degree">本科</span>
+            <span class="edu-major">计算机科学与技术</span>
+            <span class="edu-time">2019-2023</span>
+          </div>
+          <div class="edu-details">
+            <p>排名：9/90 绩点：3.86/4</p>
+            <p>
+              主要课程：高数分析(96)，概率论与数理统计(97)，线性代数A(94)，高等数学A上(98)，高等数学A下(92)，数据结构(92)，软件工程(90)，C++程序设计(90)，操作系统(90)，计算机网络(89)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 项目经历 -->
+      <div class="project">
+        <h1>项目经历</h1>
+
+        <div class="pro-section">
+          <div class="pro-header">
+            <span class="pro-name">多模态深度估计系列研究</span>
+            <span class="pro-role">负责人</span>
+            <span class="pro-technology">Python/PyTorch</span>
+            <span class="pro-time">2024.02.26-2025.01.24</span>
+          </div>
+          <div class="pro-details">
+            <p>
+              项目描述：a.
+              使用音频和图像数据进行多模态深度估计，提出了场景感知融合的注意力机制用于融合音频和图像数据，提升了深度估计的准确率。
+              b.
+              提出了一种多模态条件嵌入扩散模型用于提升多模态特征的表达能力，提升了深度估计的准确率。
+              c.
+              通过引入回声波形嵌入，实现了回声和视觉数据的多模态融合，显著提高了深度估计的精度。
+            </p>
+          </div>
+        </div>
+
+        <div class="pro-section">
+          <div class="pro-header">
+            <span class="pro-name">基于CNN的非视域信号分类器的分析与评估</span>
+            <span class="pro-role">负责人</span>
+            <span class="pro-technology">Python/PaddlePaddle</span>
+            <span class="pro-time">2023.02.06-2023.05.15</span>
+          </div>
+          <div class="pro-details">
+            <p>
+              项目描述：分析了三种卷积神经网络模型不同结构和参数情况下的性能，并且与基于特征的机器学习模型进行了对比和分析。
+            </p>
+          </div>
+        </div>
+
+        <div class="pro-section">
+          <div class="pro-header">
+            <span class="pro-name">基于MFCC和CNN的语音情感识别</span>
+            <span class="pro-role">负责人</span>
+            <span class="pro-technology">Python/PyTorch</span>
+            <span class="pro-time">2023.04.06-2023.04.30</span>
+          </div>
+          <div class="pro-details">
+            <p>
+              项目描述：使用MFCC算法提取原始音频文件中的时频特征，并且将时频特征保存为图片，将时序数据分类转化为图片分类问题，分类准确率从90.8%提升到93.6%
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 证书与奖项 -->
+      <div class="certificate">
+        <h1>证书奖项</h1>
+        <div class="section">
+          <ul>
+            <li>
+              <span class="cer-name">国家学业奖学金、郑州大学三好研究生</span>
+              <span class="cer-time">2023-2024</span>
+            </li>
+            <li>
+              <span class="cer-name"
+                >国家励志奖学金、河南大学三好学生、河南大学优秀毕业生</span
+              >
+              <span class="cer-time">2022-2023</span>
+            </li>
+            <li>
+              <span class="cer-name"
+                >国家励志奖学金、河南大学单项奖学金、河南大学三好学生</span
+              >
+              <span class="cer-time">2021-2022</span>
+            </li>
+            <li>
+              <span class="cer-name"
+                >国家励志奖学金、河南大学单项奖学金、河南大学三好学生</span
+              >
+              <span class="cer-time">2020-2021</span>
+            </li>
+            <li>
+              <span class="cer-name">国家励志奖学金、河南大学三好学生</span>
+              <span class="cer-time">2019-2020</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <ul>
+            <li>
+              <span class="cer-name"
+                >第十二届蓝桥杯全国软件和信息技术专业人才大赛</span
+              >
+              <span class="cer-level">国家级三等奖</span>
+            </li>
+            <li>
+              <span class="cer-name">中国高校计算机大赛2022网络技术挑战赛</span>
+              <span class="cer-level">国家级三等奖</span>
+            </li>
+
+            <li>
+              <span class="cer-name">第二十四届中国机器人及人工智能大赛</span>
+              <span class="cer-level">省部级一等奖</span>
+            </li>
+            <li>
+              <span class="cer-name"
+                >第十二届全国大学生商务“创新、创意及创业”挑战赛</span
+              >
+              <span class="cer-level">省部级三等奖</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 自我评价 -->
+      <div class="section">
+        <h1>自我评价</h1>
+        <p>
+          本人性格开朗，乐观向上，有较强的团队合作精神，能够快速融入团队，适应团队工作环境，有较强的学习能力和适应能力，能够快速学习新知识，有较强的自我驱动力，能够独立解决问题。
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import ResumeEditor from '../views/ResumeEditor.vue';
+import Setting from '../views/Setting.vue';
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/editor',
     name: 'ResumeEditor',
     component: ResumeEditor
+  },
+  {
+    path: '/setting',
+    name: 'Setting',
+    component: Setting
   }
 ];
 
